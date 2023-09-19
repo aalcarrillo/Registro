@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Summer;
+    src: url("Summer.otf") format("opentype");
+}
+
+
+
+
+body {
+  background-color: #4aa4f0;
+  background-image: url("Bienvenido_MCI.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+.PastoresTitulo{
+  text-align:center;
+    font-size: 90px;
+    font-family: Summer;
+    color:white;
+
+}
+
+.form-container {
+  margin: 20px auto;
+  padding: 20px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-page {
+  display: none;
+}
+
+.form-page.active-page {
+  display: block;
+}
+  .btn {
+    margin: 0 5px; /* Margen entre los botones */
+  }
+.form-group {
+  text-align: center;
+}
+.form-navigation{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.btn-prev{
+  margin-bottom: 10px;
+  width:100px;
+}
+.btn-next{
+  width:100px;
+}
+.btn-send{
+
+}
+.blur-out{animation:blur-out 0.2s linear both} @keyframes blur-out{0%{filter:blur(.01px);}100%{filter:blur(12px);opacity:0}}
+
+.blur-in{animation:blur-in 0.2s linear both} @keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  color: black;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2779bd;
+  color: white;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #145991;
+}
+
+button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
